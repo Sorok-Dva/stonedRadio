@@ -1,0 +1,28 @@
+body 
+{ 
+	background:url(images/playerradio2.png) no-repeat; 
+	color:black;
+	line-height:1em;
+	font-family: Tahoma, sans-serif;
+	color: #FFF;
+}
+html { 
+	min-width:650px;
+}
+html, body 
+{ 
+	height:380px;
+}
+#haut
+{
+	height: 215px;
+}
+#wrapper
+{
+	width:600px;
+	overflow: auto;
+	min-width:600px;
+	padding:0 5px;
+	margin-left:71px;
+	height:49px;
+}

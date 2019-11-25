@@ -1,0 +1,5 @@
+DirectoryIndex public/index.php
+SetEnv PHP_VER 5_4
+
+Redirect permanent /index.php/ http://stoned-radio.fr/ 
+ErrorDocument 404 http://stoned-radio.fr/ 

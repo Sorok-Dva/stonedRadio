@@ -1,0 +1,44 @@
+.radioPlay .radioPlayBtn { width: 36px; height: 36px; opacity: 0.75; background: #424242 url("http://www.radionomy.com/images/icons/icon-browsePlay.png") center center no-repeat; background-size: 42px 42px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; border-radius: 100px; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; cursor: pointer; }
+
+.radioPlay .radioPlayBtn:hover { opacity: 1; -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+
+.radioPlay .radioPlayBtn.StopBtn { background: #424242 url("http://www.radionomy.com/images/icons/icon-browseStop.png") center center no-repeat; background-size: 42px 42px; }
+
+.radioPlay .radioPlayBtn.StopBtn:hover { opacity: 1; -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+
+#radioProfileTop #radioProfileInfo .radioPlay .radioPlayBtn { width: 80px; height: 80px; background: rgba(0, 0, 0, 0.55) url("http://www.radionomy.com/images/icons/icon-browsePlayBig.png") center center no-repeat; background-size: 42px 42px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; border-radius: 100px; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; cursor: pointer; }
+
+#radioProfileTop #radioProfileInfo .radioPlay .radioPlayBtn:hover { background: black url("http://www.radionomy.com/images/icons/icon-browsePlayBig.png") center center no-repeat; background-size: 42px 42px; -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+
+#radioProfileTop #radioProfileInfo .radioPlay .radioPlayBtn.StopBtn { background: rgba(0, 0, 0, 0.55) url("http://www.radionomy.com/images/icons/icon-browseStopBig.png") center center no-repeat; background-size: 42px 42px; }
+
+#radioProfileTop #radioProfileInfo .radioPlay .radioPlayBtn.StopBtn:hover { background: black url("http://www.radionomy.com/images/icons/icon-browseStopBig.png") center center no-repeat; background-size: 42px 42px; -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+
+
+
+
+
+.jp-volume-bar:hover { cursor: pointer; }
+
+
+/* ---------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------- */
+.jp-volume-bar { background: url("https://www.radionomy.com/images/player/playerVolumeBG.png"); position: absolute; width: 240px; height: 7px; padding: 1px; overflow: hidden; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; }
+
+.jp-volume-bar:hover { cursor: pointer; }
+
+div.jp-audio .jp-interface .jp-volume-bar, div.jp-audio-stream .jp-interface .jp-volume-bar { top: 10px; left: 0; display: none; }
+
+div.jp-audio-stream .jp-interface .volumeWrap .jp-volume-bar { margin-top: 8px; margin-left: 30px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; }
+
+div.jp-video .jp-volume-bar { top: 5px; left: 0; width: 95px; padding-right: 1px; margin-top: 30px; }
+
+.jp-volume-bar-value { background: url("https://www.radionomy.com/images/player/playerVolumeProgress.png"); height: 7px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; }
+/* ---------------------------------------------------------------------------*/
+
+
+img.down, img.up { position: absolute; top: 13px; opacity: 0.5; display: none; }
+
+img.down { left: 18px; }
+
+img.up { left: 335px; }

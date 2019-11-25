@@ -1,0 +1,1 @@
+#returnOnTop{background:url('../../images/return-on-top.png')no-repeat;bottom:1%;cursor: pointer;display:none;filter:alpha(opacity = 70);height:48px;opacity:0.5;position: fixed;right: 5px;width: 48px;}#returnOnTop:hover {filter:alpha(opacity = 100);opacity: 1;}

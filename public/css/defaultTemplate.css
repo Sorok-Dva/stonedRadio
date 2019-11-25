@@ -1,0 +1,624 @@
+/****************** BOOTSTRAP ******************/
+
+/**
+    Formulaire de connexion depuis le meni
+*/
+    #login-dp{
+        min-width: 250px;
+        padding: 14px 14px 0;
+        overflow:hidden;
+        background-color:rgba(255,255,255,.8);
+    }
+    #login-dp .help-block{
+        font-size:12px
+    }
+    #login-dp .bottom{
+        background-color:rgba(255,255,255,.8);
+        border-top:1px solid #ddd;
+        clear:both;
+        padding:14px;
+    }
+    #login-dp .social-buttons{
+        margin:12px 0
+    }
+    #login-dp .social-buttons a{
+        width: 49%;
+    }
+    #login-dp .form-group {
+        margin-bottom: 10px;
+    }
+    .btn-fb{
+        color: #fff;
+        background-color:#3b5998;
+    }
+    .btn-fb:hover{
+        color: #fff;
+        background-color:#496ebc
+    }
+    .btn-tw{
+        color: #fff;
+        background-color:#55acee;
+    }
+    .btn-tw:hover{
+        color: #fff;
+        background-color:#59b5fa;
+    }
+    @media(max-width:768px){
+        #login-dp{
+            background-color: inherit;
+            color: #fff;
+        }
+        #login-dp .bottom{
+            background-color: inherit;
+            border-top:0 none;
+        }
+    }
+/*---------------------*/
+.avatar-xs
+{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.avatar-sm
+{
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+}
+
+.avatar-md
+{
+    width: 135px;
+    height: 135px;
+    background-color: #fff;
+}
+
+.avatar-lg /*pour l'avatar principal page profil*/
+
+{
+    width: 166px;
+    height: 166px;
+    background-color: #fff;
+}
+
+.round-corner
+{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.no-corner
+{
+    border-radius: 0}
+
+.panel-heading-bloc-top
+{
+    position: absolute;
+    top: -59px;
+    left: -3px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.title-list-bold
+{
+    font-weight: bold;
+    color: #6e6e6e;
+    line-height: 1.6em;
+    font-size: 14px;
+}
+
+.bout-md-width
+{
+    width: 180px;
+    line-height: 40px;
+    padding: 1px 6px;
+}
+
+.bout-sm-width
+{
+    width: 116px;
+    line-height: 40px;
+    padding: 1px 6px;
+}
+
+.inline-block
+{
+    /* non utilisé pour l'instant*/
+    display: inline-block;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.display-none
+{
+    display: none;
+}
+
+/****************** CSS HOME ******************/
+
+html, body{
+    height: 100%;
+    color:#828282;
+    line-height: 1.42857143;
+}
+
+.infobulle{
+    z-index: 9999;
+    position: absolute;
+    visibility : hidden;
+    border: 1px solid #00226c;
+    text-align: center;
+    max-width: 450px;
+    padding: 10px;
+    font-size: 10px;
+    color:white;
+    background-color: #557186;
+}
+
+#listenRadio{
+    background-color: #F5F5F5;;
+    border: 1px solid white;
+    color: #828282;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    outline: 1px solid black;
+    padding: 3px 15px 3px 10px;
+    font-size: 10pt;
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+    position:fixed;
+    right: -230px;
+    top: 20%;
+    height: 60%;
+    width: 260px;
+    z-index: 20;
+    overflow: auto;
+}
+
+.verticalText{
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    margin-top:180px;
+    float:left;
+}
+/**
+    Style du dialog() et contenu de cette dernière
+*/
+    div.ui-dialog
+    {
+        z-index: 100;
+        position:fixed;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('http://localhost/tchat/public/css/Images/diapo1.jpg');
+    }
+
+    div.trophies {
+        position:relative;
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin: 1px;
+        border: 1px solid #808080;
+        color: #831B1B;
+        cursor: help;
+        background-color: #fdfdfe;
+        border-radius: 50%;
+    }
+
+    .achievementNumber {
+        position: relative;
+        font-size: 12px;
+        top: 55px;
+        left: 27px;
+        right: 25px;;
+    }
+
+    .oneLevelAchievementNumber {
+        position: relative;
+        font-size: 35px;
+        top: 38px;
+        left: 27px;
+        right: 25px;
+    }
+
+    .achievementLvl {
+        position: absolute;
+        left: 55px;
+        top: 15px;
+    }
+
+    .trophiesText{
+        background: url('Images/trophies.png') no-repeat -82px -24px;
+        width: 174px;
+        height: 41px;
+    }
+
+    .trophies1 {
+        background: url('Images/trophies.png') no-repeat -33px -86px;
+        width: 43px;
+        height: 43px;
+        left: 15px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .trophies2 {
+        background: url('Images/trophies.png') no-repeat -98px -86px;
+        width: 32px;
+        height: 43px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophiesDedi {
+        background: url('Images/trophies.png') no-repeat -153px -86px;
+        width: 32px;
+        height: 43px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophiesDev {
+        background: url('Images/trophies.png') no-repeat -207px -94px;
+        width: 40px;
+        height: 27px;
+        left: 15px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .trophies5 {
+        background: url('Images/trophies.png') no-repeat -263px -89px;
+        width: 42px;
+        height: 38px;
+        left: 15px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .trophiesFondateur {
+        background: url('Images/trophies.png') no-repeat -40px -144px;
+        width: 28px;
+        height: 43px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophies7 {
+        background: url('Images/trophies.png') no-repeat -102px -144px;
+        width: 19px;
+        height: 43px;
+        left: 25px;
+        right: 25px;
+        top: 10px;
+    }
+
+    .trophies8 {
+        background: url('Images/trophies.png')no-repeat -148px -144px;
+        width: 42px;
+        height: 42px;
+        left: 15px;
+        right: 15px;
+        top: 10px;
+    }
+
+    .trophiesNewMember {
+        background: url('Images/trophies.png') no-repeat -211px -144px;
+        width: 31px;
+        height: 42px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophies10 {
+        background: url('Images/trophies.png') no-repeat -263px -144px;
+        width: 42px;
+        height: 42px;
+        left: 15px;
+        right: 15px;
+        top: 10px;
+    }
+
+    .trophies11 {
+        background: url('Images/trophies.png') no-repeat -33px -201px;
+        width: 43px;
+        height: 42px;
+        left: 15px;
+        right: 15px;
+        top: 10px;
+    }
+
+    .trophiesAnimateur {
+        background: url('Images/trophies.png') no-repeat -101px -201px;
+        width: 22px;
+        height: 43px;
+        left: 25px;
+        right: 25px;
+        top: 10px;
+    }
+
+    .trophiesEquipeSite {
+        background: url('Images/trophies.png') no-repeat -148px -203px;
+        width: 42px;
+        height: 39px;
+        left: 15px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .trophiesWroteTutorials {
+        background: url('Images/trophies.png') no-repeat -218px -201px;
+        width: 17px;
+        height: 43px;
+        left: 25px;
+        right: 25px;
+        top: 10px;
+    }
+
+    .trophies15 {
+        background: url('Images/trophies.png') no-repeat -268px -201px;
+        width: 32px;
+        height: 43px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophies16 {
+        background: url('Images/trophies.png') no-repeat -38px -259px;
+        width: 33px;
+        height: 42px;
+        left: 20px;
+        right: 20px;
+        top: 10px;
+    }
+
+    .trophies17 {
+        background: url('Images/trophies.png') no-repeat -90px -258px;
+        width: 43px;
+        height: 43px;
+        left: 15px;
+        right: 15px;
+        top: 10px;
+    }
+
+    .trophies18 {
+        background: url('Images/trophies.png') no-repeat -155px -278px;
+        width: 27px;
+        height: 23px;
+        left: 20px;
+        right: 20px;
+        top: 20px;
+    }
+
+    .trophiesAge {
+        background: url('Images/trophies.png') no-repeat -207px -258px;
+        width: 39px;
+        height: 44px;
+        left: 15px;
+        right: 15px;
+        top: 10px;
+    }
+
+    .trophies20 {
+        background: url('Images/trophies.png') no-repeat -260px -260px;
+        width: 48px;
+        height: 40px;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+
+    /*---------------------*/
+.spanLink {
+    cursor : pointer;
+}
+.user {
+    text-decoration:none;
+    color:#3787ea;
+    word-wrap:break-word
+}
+
+.user:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-position:0 -82px
+}
+
+.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-create-import-image
+{
+    letter-spacing: 0.04em;
+    position: relative;
+}
+
+.btn-create-import-image input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer !important;
+}
+
+/**
+    Le tchat
+*/
+    #CONTENTchat {
+        top: 40px;
+        left: 25%;
+        right: 23%;
+        bottom: 60px;
+        background-color:#FFF;
+        z-index: 1;
+        color: black;
+        border: solid black 1px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-size:11px;
+        padding: 5px;
+        height: 650px;
+    }
+    #postChat {
+        bottom: 20px;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+    }
+
+    /* Bloc contenant la zone de texte et bouton */
+    .post_message  {
+        width: 95%;
+        margin: auto;
+        border: 1px solid #d2d2d2;
+        background: #f8fafd;
+        padding: 3px;
+    }
+    /* Zone de texte */
+    .post_message #message {
+        width: 80%;
+    }
+    /* Bouton d'envoi */
+    .post_message #post {
+        width: 18%;
+    }
+
+    /* La zone où sont affichés les messages
+    et utilisateurs connectés */
+    .chat {
+        width: 95%;
+        margin: 10px auto;
+        border: 1px solid #d2d2d2;
+        padding: 0px;
+    }
+    /* Bloc de chargement */
+    .chat #loading {
+        margin-top: 50px;
+    }
+    /* Annonce */
+    .chat #annonce {
+        background: #f8fafd;
+        margin: -6px -7px 5px -7px;
+        height:20px;
+        box-shadow: 8px 8px 12px #aaa;
+        -webkit-box-shadow: 0px 8px 15px #aaa;
+    }
+    /* Zone des messages */
+    .chat #text-td {
+        margin: 0px;
+        padding: 5px;
+        width: 80%;
+        background: #fff;
+    }
+    /* Zone des utilisateurs connectés */
+    #colonneDroite {
+        top: 10px;
+        right: 10px;
+        left: 77.5%;
+        bottom: 20px;
+        z-index: 5;
+        overflow: auto;
+    }
+    .chat .users-td, .chat .users-chat-td {
+        margin: 0px;
+        padding: 5px;
+        width: 20%;
+        background: #ddd;
+    }
+    .chat #text, .chat #users, .chat #users-chat {
+        height:500px;
+        overflow-y: auto;
+    }
+
+    /* Modification du statut */
+    .status {
+        width: 95%;
+        border: none;
+        background: #fff;
+        margin: auto;
+        text-align: right;
+    }
+
+    .info {
+        color: green;
+    }
+
+    .canal_perso {
+        color: blue;
+        user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -moz-user-select: -moz-none;
+        -webkit-user-select: none;
+    }
+    .canal_joueurs {
+        font-size: 13px;
+    }
+
+    .canal_info {
+        color: purple;
+        /*font-size: 13px;*/
+    }
+
+    .Online {
+        background:#bfd70e;
+        border-radius:50%;
+        width:10px;
+        height:10px;
+        border:2px solid #679403;
+        float:left;
+        margin-top:5px;
+    }
+
+    .AFK {
+        background:darkorange;
+        border-radius:50%;
+        width:10px;
+        height:10px;
+        border:2px solid orangered;
+        float:left;
+        margin-top:5px;
+    }
+
+    .Busy {
+        background:red;
+        border-radius:50%;
+        width:10px;
+        height:10px;
+        border:2px solid darkred;
+        float:left;
+        margin-top:5px;
+    }

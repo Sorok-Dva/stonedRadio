@@ -1,0 +1,28 @@
+
+    <tracks>
+    	<radioname>RadioStoned</radioname>
+        <rank>0</rank>
+    	<isradionomy>1</isradionomy>
+        <radurl>http://www.radionomy.com/radiostoned</radurl>
+        <track>
+        	<uniqueid>2614025719</uniqueid>
+        	<title>Adrenaline Rush</title>
+            <artists>DJ LBR (feat. MR Vegas)</artists>
+            <starttime>2015-10-04 23:34:11.767</starttime>
+            <playduration>192216</playduration>
+            <current>1</current>
+            
+                            <cover></cover>
+                        
+            	
+            
+				
+            	<callmeback>68587</callmeback>
+                
+			
+			
+        </track> 
+        
+        
+    </tracks>
+	
